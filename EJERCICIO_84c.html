@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Evento "onresize"</title>
+
+  <style>
+    /* Estilos para el mensaje */
+   
+   
+    #mensaje {
+      font-size:30px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1 id="mensaje">¡ARRASTRAR Y SOLTAR!</h1>
+<!-- <div id="drag" draggable="true"> ARRASTRAME </div> -->
+<img id="imagen1" draggable="false" src="1.jpg" height="200" width="200" title="Uno">
+<
+
+
+  <script type="text/javascript">
+    // Obtener el elemento del mensaje y la ventana.
+    var mensaje = document.getElementById('mensaje');
+    const imagen1 = document.getElementById('imagen1');
+   
+    imagen1.onerror=function(){
+
+        alert('Error al cargar la mimagen');
+        imagen1.src='2.jpg';
+
+
+    }
+    
+
+    
+
+  </script>
+
+</body>
+
+</html>
